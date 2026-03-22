@@ -1,0 +1,183 @@
+baseURL = "https://roadwaysolar.com/"
+languageCode = "en-us"
+title = "Roadway Solar"
+theme = "printwire"
+
+[params]
+tagline       = "3D printed solar panel mounting systems, roadway solar panels, and infrastructure components for distributed clean energy generation."
+description   = "Roadway Solar covers the additive manufacturing of solar energy infrastructure — from 3D printed mounting brackets to experimental roadway solar panels and distributed generation systems."
+keywords      = "roadway solar, solar panel mounting 3D print, solar infrastructure AM, distributed solar, solar road panels, 3D printed solar"
+logoEmoji     = "☀️"
+contactEmail  = "maxdavisgroup@gmail.com"
+footerServicesLabel = "Services"
+
+colorPrimary      = "#f59e0b"
+colorPrimaryDark  = "#d97706"
+colorPrimaryLight = "#fbbf24"
+colorBgDark       = "#090700"
+colorBgSection    = "#0e0b00"
+colorBgCard       = "#151000"
+colorBgCardHover  = "#1d1600"
+
+fontPrimary   = "Rajdhani"
+fontSecondary = "Source+Sans+3"
+
+newsFallbackImages = ["https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80"]
+
+heroEyebrow  = "Solar Infrastructure AM"
+heroTitle    = "Roadway <em>Solar</em>"
+heroSubtitle = "3D printed solar panel mounting systems, roadway solar panels, and infrastructure components for distributed clean energy generation."
+heroCta1Text = "Explore Services"
+heroCta1URL  = "/services/"
+heroCta2Text = "Get a Quote"
+heroCta2URL  = "/contact/"
+heroImage    = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80"
+
+overviewTitle   = "3D Printed Solar Infrastructure"
+overviewText    = "Additive manufacturing enables custom solar mounting structures, lightweight tracking systems, and experimental roadway solar tile geometries — faster and cheaper than conventional fabrication."
+overviewBtnText = "View Services"
+overviewBtnURL  = "/services/"
+
+applicationsTitle = "Industries We Serve"
+servicesTitle    = "Roadway Solar Services"
+servicesSubtitle = "3D printed solar panel mounting systems, roadway solar panels, and infrastructure components for distributed clean energy generation."
+clusterTitle = "Related 3D Printing Resources"
+newsletterTitle = "Industry Updates to Your Inbox"
+newsletterText  = "Research breakthroughs and industry news — delivered monthly."
+ctaTitle   = "Start Your Project"
+ctaText    = "3D printed solar panel mounting systems, roadway solar panels, and infrastructure components for distributed clean energy generation."
+ctaBtnText = "Get in Touch"
+ctaBtnURL  = "/contact/"
+
+[[params.stats]]
+count  = 4
+suffix = "TW"
+label  = "Global Solar Capacity 2024"
+
+[[params.stats]]
+count  = 28
+suffix = "%"
+label  = "Annual Solar Growth"
+
+[[params.stats]]
+count  = 40
+suffix = "%"
+label  = "Mounting Cost Reduction (AM)"
+
+[[params.stats]]
+count  = 25
+suffix = "yr"
+label  = "Solar Panel Lifespan"
+
+
+[[params.applications]]
+title       = "Solar Mounting Structures"
+description = "Custom aluminium and polymer mounting brackets for rooftop and ground-mounted solar arrays."
+image       = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80"
+
+[[params.applications]]
+title       = "Roadway Solar Tiles"
+description = "Experimental solar paving tiles with embedded photovoltaics and structural load capacity."
+image       = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80"
+
+[[params.applications]]
+title       = "Tracking System Components"
+description = "Lightweight single and dual-axis tracker components printed in aluminium alloy."
+image       = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80"
+
+[[params.applications]]
+title       = "Off-Grid Solar Infrastructure"
+description = "Integrated mounting and housing systems for remote and off-grid solar installations."
+image       = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80"
+
+
+[[params.servicesPreview]]
+icon        = "☀️"
+title       = "Solar Mounting Design"
+description = "Custom aluminium alloy mounting structures designed for specific roof types, wind loads, and panel configurations."
+
+[[params.servicesPreview]]
+icon        = "🛣️"
+title       = "Roadway Panel Prototyping"
+description = "Structural solar tile prototypes with integrated wiring channels, textured surfaces, and photovoltaic cell housing."
+
+[[params.servicesPreview]]
+icon        = "⚙️"
+title       = "Tracker Components"
+description = "Lightweight aluminium and composite tracking arms and drive components for single and dual-axis solar trackers."
+
+[[params.servicesPreview]]
+icon        = "🔬"
+title       = "Infrastructure Consulting"
+description = "DfAM consulting for solar manufacturers looking to integrate additive manufacturing into their production process."
+
+
+[[params.services]]
+name        = "Solar Mounting Design"
+description        = "Custom aluminium alloy mounting structures designed for specific roof types, wind loads, and panel configurations."
+icon        = "☀️"
+image        = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80"
+
+[[params.services]]
+name        = "Roadway Panel Prototyping"
+description        = "Structural solar tile prototypes with integrated wiring channels, textured surfaces, and photovoltaic cell housing."
+icon        = "🛣️"
+image        = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80"
+
+[[params.services]]
+name        = "Tracker Components"
+description        = "Lightweight aluminium and composite tracking arms and drive components for single and dual-axis solar trackers."
+icon        = "⚙️"
+image        = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80"
+
+[[params.services]]
+name        = "Infrastructure Consulting"
+description        = "DfAM consulting for solar manufacturers looking to integrate additive manufacturing into their production process."
+icon        = "🔬"
+image        = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80"
+
+
+[[params.clusterLinks]]
+name        = "3dprintsolar.com"
+url         = "https://3dprintsolar.com"
+description = "Solar AM flagship"
+
+[[params.clusterLinks]]
+name        = "3dprintcircuitry.com"
+url         = "https://3dprintcircuitry.com"
+description = "Electronics 3D printing"
+
+[[params.clusterLinks]]
+name        = "sendcutship.com"
+url         = "https://sendcutship.com"
+description = "Custom manufacturing"
+
+[[params.clusterLinks]]
+name        = "3dprintarchitecture.com"
+url         = "https://3dprintarchitecture.com"
+description = "Architecture AM"
+
+[[menu.main]]
+name = "Home"
+url  = "/"
+weight = 1
+[[menu.main]]
+name = "About"
+url  = "/about/"
+weight = 2
+[[menu.main]]
+name = "Articles"
+url  = "/articles/"
+weight = 3
+[[menu.main]]
+name = "Services"
+url  = "/services/"
+weight = 4
+[[menu.main]]
+name = "Contact"
+url  = "/contact/"
+weight = 5
+[[menu.main]]
+name = "Advertise"
+url  = "/advertise/"
+weight = 6
