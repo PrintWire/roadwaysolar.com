@@ -83,36 +83,10 @@
 
     <div class="ed-section-label">
       Analysis &amp; Deep Dives
-      <a href="#">View All &rarr;</a>
+      <a href="/articles/">View All &rarr;</a>
     </div>
-    <div class="ed-list">
-      <article class="ed-list-item">
-        <img src="images/rb02_mount_bracket.png" alt="Hexagonal solar pavement tile">
-        <div>
-          <span class="ed-badge">Pavement</span>
-          <div class="ed-card-meta">June 24, 2026 · 9 min read</div>
-          <h3><a href="#">Hexagonal Solar Tiles Reach Driveable Load Ratings</a></h3>
-          <p class="ed-card-excerpt">Modular hex tiles with textured tempered-glass surfaces are passing load and traction tests that qualify them for driveable, not just walkable, deployment.</p>
-        </div>
-      </article>
-      <article class="ed-list-item">
-        <img src="images/rb03_tracker_gear.png" alt="Solar road with embedded LED markers">
-        <div>
-          <span class="ed-badge">Smart Roads</span>
-          <div class="ed-card-meta">June 20, 2026 · 7 min read</div>
-          <h3><a href="#">Embedded LED Markers Turn Roads Into Signage</a></h3>
-          <p class="ed-card-excerpt">Solar panels with integrated LEDs are powering dynamic lane markings and warnings — the road surface becomes its own signage and generation.</p>
-        </div>
-      </article>
-      <article class="ed-list-item">
-        <img src="images/rb04_racking.png" alt="Solar carport canopy over parking">
-        <div>
-          <span class="ed-badge">Canopies</span>
-          <div class="ed-card-meta">June 18, 2026 · 10 min read</div>
-          <h3><a href="#">Solar Carports Pair Shade With Generation</a></h3>
-          <p class="ed-card-excerpt">Parking-lot canopies are the fastest-deploying road-adjacent solar — shade, EV charging, and generation over asphalt that was already there.</p>
-        </div>
-      </article>
+    <div class="ed-list" id="pwDeepDives">
+      <div style="padding:1.5rem;color:var(--text-faint);">Loading analysis…</div>
     </div>
 
     <div class="ed-section-label">
@@ -422,6 +396,31 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
       ? top.map(card).join('')
       : '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--text-faint);">Unable to load news.</div>';
   }
+})();
+
+// -- Analysis & Deep Dives: PrintWire catalog in list format --
+(function(){
+  var box = document.getElementById('pwDeepDives');
+  if (!box) return;
+  function esc(s){var d=document.createElement('div');d.appendChild(document.createTextNode(s==null?'':s));return d.innerHTML;}
+  var empty = '<div style="padding:1.5rem;color:var(--text-faint);">In-depth analysis and deep dives are on the way — check back soon.</div>';
+  fetch('network.json',{cache:'no-store'})
+    .then(function(r){ return r.ok ? r.json() : []; })
+    .then(function(items){
+      items = (items || []).slice();
+      items.sort(function(a,b){ return (b.iso||'').localeCompare(a.iso||''); });
+      if (!items.length){ box.innerHTML = empty; return; }
+      box.innerHTML = items.slice(0,8).map(function(a){
+        var img = a.img ? '<img src="'+esc(a.img)+'" alt="" loading="lazy">' : '';
+        var meta = esc(a.date||'') + (a.origin ? ' · '+esc(a.origin) : '');
+        return '<article class="ed-list-item">'+img+'<div>'+
+          '<div class="ed-card-meta">'+meta+'</div>'+
+          '<h3><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></h3>'+
+          '<p class="ed-card-excerpt">'+esc(a.summary||'')+'</p>'+
+          '</div></article>';
+      }).join('');
+    })
+    .catch(function(){ box.innerHTML = empty; });
 })();
 </script>
 </body>
