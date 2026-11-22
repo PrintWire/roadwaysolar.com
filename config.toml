@@ -14,7 +14,7 @@ title = "Roadway Solar"
 siteName      = "Roadway Solar"
 logoHtml      = 'ROADWAY&nbsp;<span class="ed-logo-accent">SOLAR</span>'
 tagline       = "Solar pavement, walkable panels, and energy-harvesting road surfaces."
-description   = "Roadway Solar — solar pavement and energy-harvesting road surfaces, covering walkable photovoltaic panels, road-integrated PV, canopies, and a directory connecting developers to suppliers."
+description   = "Roadway Solar is a PrintWire network site about solar roadways and road-integrated photovoltaics. PrintWire passes quote requests to specialised manufacturers and returns pricing. PrintWire does not manufacture parts itself."
 keywords      = "solar roadway, solar pavement, walkable solar panel, road-integrated photovoltaics, solar road tile, energy harvesting pavement, solar canopy"
 logoEmoji     = "☀"
 contactEmail  = "maxdavisgroup@gmail.com"
